@@ -77,8 +77,8 @@ INSERT INTO SALGRADE VALUES (3, 1401, 2000);
 INSERT INTO SALGRADE VALUES (4, 2001, 3000);
 INSERT INTO SALGRADE VALUES (5, 3001, 9999);
 
-SELECT EMPNO FROM EMP;
 commit;
+SELECT EMPNO FROM EMP;
 select avg(sal) from emp;
 select min(sal) from emp;
 select max(sal) from emp;
