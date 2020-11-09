@@ -76,3 +76,13 @@ INSERT INTO SALGRADE VALUES (2, 1201, 1400);
 INSERT INTO SALGRADE VALUES (3, 1401, 2000);
 INSERT INTO SALGRADE VALUES (4, 2001, 3000);
 INSERT INTO SALGRADE VALUES (5, 3001, 9999);
+
+SELECT EMPNO FROM EMP;
+commit;
+select avg(sal) from emp;
+select min(sal) from emp;
+select max(sal) from emp;
+select sum(sal) from emp;
+select * from emp where deptno in (select deptno from dept where deptno>20 );
+select * from emp where ename in (select ename from emp where ename=20 );
+select * from emp where sal in (select sal) from emp where sum(sal)>4000 );
