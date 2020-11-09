@@ -84,4 +84,4 @@ select max(sal) from emp;
 select sum(sal) from emp;
 select * from emp where deptno in (select deptno from dept where deptno>20 );
 select * from emp where ename in (select ename from emp where ename=20 );
-select * from emp where sal in (select sal) from emp where sum(sal)>4000 );
+select * from emp where sal in (select sal from emp where sum(sal)>4000 );
